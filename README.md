@@ -1,7 +1,16 @@
 
-# Troubleshooting Section Finder
+# Troubleshooting Section Finder using Azure AI Document Intelligence, Pinecone, GPT-4 with RAG.
 
-This application is designed to automatically extract troubleshooting sections from uploaded PDF documents. It utilizes Azure AI, Pinecone database services, and OpenAI's GPT4-Turbo model to identify and extract relevant sections efficiently.
+This application is designed to automatically extract troubleshooting sections from uploaded PDF documents. It utilizes Azure AI, Pinecone database services, and OpenAI's GPT-4 Turbo model to identify and extract relevant sections efficiently.
+
+## How It Works
+
+1. **Text Extraction**: Azure AI Document Intelligence helps us scrape the text from the PDF files.
+2. **Embedding Generation**: We use OpenAI's embedding model to convert the extracted text into meaningful vector representations.
+3. **Storage**: These embeddings are stored in the Pinecone vector database.
+4. **Retrieval**: Using Retrieval-Augmented Generation (RAG), we efficiently find and extract the troubleshooting sections from the PDF files.
+
+By combining these advanced technologies, our application ensures accurate and efficient identification of troubleshooting information within documents.
 
 ## Getting Started
 
@@ -36,7 +45,7 @@ A step-by-step series of examples that tell you how to get a development environ
 
 3. **Set up configuration files**
 
-   - **Azure Credentials**: Place your Azure AI credentials in the `azure.ini` file.
+   - **Azure Credentials**: Place your Azure AI credentials in the `azure.ini` file. (Azure Resource Group)
    - **Other Configuration**: Specify your OpenAI API key and other configurations in `config.py`. Replace the related places with your keys.
 
 
