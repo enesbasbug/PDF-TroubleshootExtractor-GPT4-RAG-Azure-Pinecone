@@ -36,7 +36,7 @@ A step-by-step series of examples that tell you how to get a development environ
 
 3. **Set up configuration files**
 
-   - **Azure Credentials**: Place your Azure AI credentials in the `azure.ini` file.
+   - **Azure Credentials**: Place your Azure AI credentials in the `azure.ini` file. (Azure Resource Group)
    - **Other Configuration**: Specify your OpenAI API key and other configurations in `config.py`. Replace the related places with your keys.
 
 
